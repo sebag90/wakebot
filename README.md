@@ -20,11 +20,11 @@ The bot listens for the /wake <name> command, looks up the MAC address for that 
 
 The bot reads three variables at startup:
 
-Variable  | Format                        | Example                                        | Description
-----------+-------------------------------+------------------------------------------------+-----------------------------------------
-TOKEN     | string                        | 123456:ABC-DEF…                                | Your bot token from @BotFather
-VALID_IDS | pipe-separated ints           | 111111|222222                                  | Telegram chat IDs allowed to use the bot
-COMPUTERS | pipe-separated name-MAC pairs | office-00:11:22:33:44:55|lab-aa:bb:cc:dd:ee:ff | The computers you can wake
+Variable  | Format                        | Example                                        | Description  
+----------+-------------------------------+------------------------------------------------+-----------------------------------------  
+TOKEN     | string                        | 123456:ABC-DEF…                                | Your bot token from @BotFather  
+VALID_IDS | pipe-separated ints           | 111111|222222                                  | Telegram chat IDs allowed to use the bot  
+COMPUTERS | pipe-separated name-MAC pairs | office-00:11:22:33:44:55|lab-aa:bb:cc:dd:ee:ff | The computers you can wake  
 
 How to find your Telegram chat ID: message @userinfobot on Telegram.
 
@@ -49,10 +49,10 @@ You should see your chat IDs and the VALID_IDS value printed to stdout, followed
 
 Send these commands to the bot on Telegram:
 
-Command      | What it does
--------------+-----------------------------------------------
-/wake <name> | Sends a WOL magic packet to the named computer
-/help        | Shows a short usage hint
+Command      | What it does  
+-------------+-----------------------------------------------  
+/wake <name> | Sends a WOL magic packet to the named computer  
+/help        | Shows a short usage hint  
 
 📚 Examples
 
